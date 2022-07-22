@@ -1,0 +1,11 @@
+.header_currency{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 25px;
+    background-color: rgb(250, 186, 66);
+    border-bottom: 3px solid #000;
+}
+span{
+    font-weight: 700;
+    margin-left: 10px;
+}

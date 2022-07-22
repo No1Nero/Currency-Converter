@@ -1,0 +1,16 @@
+<div>
+    <div>
+        <select [(ngModel)]="firstCurrencyType">
+            <option>UAH</option>
+            <option *ngFor="let curr of currencies">{{curr.cc}}</option>
+        </select>
+        <input type="number" [(ngModel)]="firstCurrencyValue" (input)="convertFirst()">
+    </div>
+    <div>
+        <select [(ngModel)]="secondCurrencyType">
+            <option>UAH</option>
+            <option *ngFor="let curr of currencies">{{curr.cc}}</option>
+        </select>
+        <input type="number" [(ngModel)]="secondCurrencyValue" (input)="convertSecond()">
+    </div>
+</div>
