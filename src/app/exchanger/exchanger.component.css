@@ -1,0 +1,48 @@
+.exchange_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.exchange_title_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    background-color: rgb(250, 186, 66);
+    border-bottom: 3px solid #000;
+    border-radius: 12px 12px 0 0;
+}
+.exchange_title{
+    font-size: 24px;
+    text-align: center;
+}
+.exchange_container{
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.exchange_content_container{
+    padding: 25px 30px;
+}
+.value_container{
+    padding: 15px 0;
+}
+.select_value{
+    margin-right: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px 4px;
+    border: 2px solid #000;
+}
+.input_value{
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px 4px;
+    border: 2px solid #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

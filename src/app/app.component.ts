@@ -12,8 +12,6 @@ export class AppComponent implements OnInit, AfterContentChecked{
   currencies: any = [];
   usdRate: any;
   eurRate: any;
-  usd: any;
-  eur: any;
 
   constructor(private currencyService: CurrencyService) {}
 
@@ -25,7 +23,5 @@ export class AppComponent implements OnInit, AfterContentChecked{
   ngAfterContentChecked() {
     this.usdRate = this.currencies.filter((curr: { cc: string; }) => curr.cc === "USD");
     this.eurRate = this.currencies.filter((curr: { cc: string; }) => curr.cc === "EUR");
-    this.usd = this.usdRate[0].rate;
-    this.eur = this.eurRate[0].rate;
   }
 }

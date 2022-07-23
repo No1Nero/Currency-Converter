@@ -1,2 +1,4 @@
-<app-header  [usdRate]="usd" [eurRate]="eur"></app-header>
-<app-exchanger [currencies]="currencies"></app-exchanger>
+<div class="main_container">
+    <app-header  [usdRate]="usdRate[0]?.rate" [eurRate]="eurRate[0]?.rate"></app-header>
+    <app-exchanger [currencies]="currencies"></app-exchanger>
+</div>

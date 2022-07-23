@@ -1,11 +1,15 @@
-.header_currency{
+.header_container{
     display: flex;
     justify-content: space-between;
     padding: 10px 50px 10px 25px;
     background-color: rgb(250, 186, 66);
     border-bottom: 3px solid #000;
+    height: 90px;
 }
 span{
     font-weight: 700;
     margin-left: 10px;
+}
+.header{
+    font-size: 35px
 }

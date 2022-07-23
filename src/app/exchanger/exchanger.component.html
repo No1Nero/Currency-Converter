@@ -1,16 +1,23 @@
-<div>
-    <div>
-        <select [(ngModel)]="firstCurrencyType">
-            <option>UAH</option>
-            <option *ngFor="let curr of currencies">{{curr.cc}}</option>
-        </select>
-        <input type="number" [(ngModel)]="firstCurrencyValue" (input)="convertFirst()">
-    </div>
-    <div>
-        <select [(ngModel)]="secondCurrencyType">
-            <option>UAH</option>
-            <option *ngFor="let curr of currencies">{{curr.cc}}</option>
-        </select>
-        <input type="number" [(ngModel)]="secondCurrencyValue" (input)="convertSecond()">
+<div class="exchange_wrapper">
+    <div class="exchange_container">
+        <div class="exchange_title_container">
+            <h2 class="exchange_title">Value Exchanger</h2>
+        </div>
+        <div class="exchange_content_container">
+            <div class="value_container">
+                <select class="select_value" [(ngModel)]="firstCurrencyType" (change)="convertSecond()">
+                    <option>UAH</option>
+                    <option *ngFor="let curr of currencies">{{curr.cc}}</option>
+                </select>
+                <input class="input_value" type="number" [ngModel]="firstCurrencyValue | number" (ngModelChange)="firstCurrencyValue=$event" (input)="convertFirst()">
+            </div>
+            <div class="value_container">
+                <select class="select_value" [(ngModel)]="secondCurrencyType" (change)="convertFirst()">
+                    <option>UAH</option>
+                    <option *ngFor="let curr of currencies">{{curr.cc}}</option>
+                </select>
+                <input class="input_value" type="number" [ngModel]="secondCurrencyValue | number" (ngModelChange)="secondCurrencyValue=$event" (input)="convertSecond()">
+            </div>
+        </div>
     </div>
 </div>

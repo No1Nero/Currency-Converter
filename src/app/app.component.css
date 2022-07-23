@@ -1,0 +1,8 @@
+.main_container{
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(-45deg,  rgb(255,255,255) 27%, rgb(250,186,66) 35%, rgb(255,255,255) 44%, rgb(255,255,255) 65%, rgb(250,186,66) 74%, rgb(255,255,255) 83%);
+    background: -webkit-linear-gradient(-45deg,  rgb(255,255,255) 27%,rgb(250,186,66) 35%,rgb(255,255,255) 44%,rgb(255,255,255) 65%,rgb(250,186,66) 74%,rgb(255,255,255) 83%);
+    background: linear-gradient(135deg,  rgb(255,255,255) 27%,rgb(250,186,66) 35%,rgb(255,255,255) 44%,rgb(255,255,255) 65%,rgb(250,186,66) 74%,rgb(255,255,255) 83%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+}
